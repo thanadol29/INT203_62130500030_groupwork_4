@@ -38,7 +38,8 @@ const app = {
       clear() {
         this.search = '';
       }
-    }
+    },
+  
 
   }
 

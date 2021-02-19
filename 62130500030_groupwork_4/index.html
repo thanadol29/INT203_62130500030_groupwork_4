@@ -43,12 +43,15 @@
     <div v-if="filteredList != 0">
       <div v-for="picture in filteredList">
         <center>
-      <div class=" max-w-5xl">
-        <a @click=" picture.bigpic = !picture.bigpic">
-          <img v-show="picture.bigpic" v-bind:src="picture.url">
-        </a>
-      </div>
-    </center>
+          <div class="bg-black" >
+            <a @click=" picture.bigpic = !picture.bigpic"> <img v-show="picture.bigpic" class="p-2 absolute w-16 right-0" src="images/iconmonstr-x-mark-7-240.png" alt=""></a>
+            <div class=" max-w-5xl">
+              <a>
+                <img v-show="picture.bigpic" v-bind:src="picture.url">
+              </a>
+            </div>
+          </div>
+        </center>
         <div class="grid col-span-2 gap-6 my-6 px-4 md:px-6 lg:px-8">
           <div class="max-w-xl mx-auto px-4 py-4 bg-white shadow-md rounded-lg">
             <a @click="picture.bigpic = !picture.bigpic">
